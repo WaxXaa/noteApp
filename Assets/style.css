@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fcfcfc;
+}
+header h1 {
+    text-align: center;
+}
+.content {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.editor {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#text {
+    width: 350px;
+    height: 250px;
+    resize: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    outline: none;
+    padding: 2px;
+    margin: 10px;
+    border: none;
+    box-shadow: 0 1px 10px rgba(184, 184, 184, 0.685);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+#text:focus {
+    border: 2px solid rgb(184, 184, 184);
+}
+.notes {
+    width: 48vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.nts {
+    padding: 2px;
+    width: 350px;
+    height: 250px;
+    margin: 5px;
+    border: 2px solid rgba(184, 184, 184, 0.685);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    background-color: #ffff;
+}
+.nts:hover {
+    box-shadow: 0 1px 10px rgba(184, 184, 184, 0.5);
+}
+.nts h6 {
+    position: relative;
+    top: 1px;
+}
+.nts p {
+    text-align: left;
+    height: 200px;
+
+}
+#delete {
+    position: relative;
+    bottom: 2px;
+    width: 110px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+#save {
+    margin: 10px;
+    width: 110px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ececec;
+    cursor: pointer;
+}
+#save:hover, #delete:hover {
+    background-color: #d1d1d1;
+    box-shadow: 0 1px 10px rgba(196, 196, 196, 0.541);
+    border: 1px solid rgb(201, 201, 201);
+}
